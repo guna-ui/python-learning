@@ -48,8 +48,8 @@ class GitHubRepositoryPipeline():
                             break
                             
             except requests.RequestException as e:
-                print(f"Error fetching commits: {e}")
-                break
+                print(f"Exception during fetching commits: {e}")
+                break 
 
 
 if __name__=='__main__':
